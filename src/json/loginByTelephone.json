@@ -1,0 +1,15 @@
+{
+  "code":"1",
+  "msg":"",
+  "data":{
+    "customer":{
+      "customerid":"123456789",
+      "nickname":"如意",
+      "openid":"ozoOtuE109OAjUeORrpFTsGcKkxg",
+      "cusImgUrl":"http://wx.qlogo.cn/mmopen/Q3auHgzwzM6IDLns5VoBIQM3jgNO4UyoFLkfA61LGkl4HAtgwevYrvr0gHVmJzuRghBN4SEh5B9ZoGsQzHib69w/0",
+      "telphone":"13283072226",
+      "shoppingCarCount":100,
+      "isFirstLogin":0
+    }
+  }
+}

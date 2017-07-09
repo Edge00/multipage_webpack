@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<div class="header-container">
+
+</div>
+<div id="navbar">
+
+</div>
+
+<div class="container">
+
+    <div class="page-init">
+        <div id="banner">
+
+        </div>
+
+        <script id="homebanner" type="text/html">
+            <div class="carousel">
+                <ul class="view">
+
+                    {{each ads item i}}
+                        {{if item.type == "1"}}
+                    <li><a href="" class="aspect_ratio"><img src="{{item.photoServerUrl}}"></a></li>
+                        {{else}}
+                    <li><a href="" class="aspect_ratio"><img src="{{item.photoServerUrl}}"></a></li>
+                        {{/if}}
+
+                    {{/each}}
+
+                </ul>
+
+                <ul class="circle">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <ul class="small-banner">
+
+                <!--{{each statics item i}}-->
+                <!--{{if item.type == "1"}}-->
+                <!--<li><a href="" ><img src="{{item.photoServerUrl}}"></a></li>-->
+                <!--{{else}}-->
+                <!--<li><a href="" ><img src="{{item.photoServerUrl}}"></a></li>-->
+                <!--{{/if}}-->
+                <!--{{/each}}-->
+                <li><img src="../img/dynamic_img/P9.png" alt=""></li>
+                <li><img src="../img/dynamic_img/Y15.jpg" alt=""></li>
+                <li><img src="../img/dynamic_img/L6.png" alt=""></li>
+                <li><img src="../img/dynamic_img/T5yh.png" alt=""></li>
+            </ul>
+        </script>
+
+
+        <script id="hot-goods-template" type="text/html">
+            {{each goGroups item i}}
+            <h1 class="common-title"><i></i>{{item.name}}</h1>
+            <ul class="goods-list">
+                {{each item.goodsList goods j}}
+                <li>
+                    <img src={{goods.picturePath}}>
+                    <h3>{{goods.goodsName}}</h3>
+                    <p title={{goods.goodsKeyWord}}>{{goods.goodsKeyWord}}</p>
+                    <span class="price">&yen;{{goods.price}}</span>
+                    <div class="btns">
+                        <a class="show-detail" href="goodsDetail.html?goodsId={{goods.goodsId}}">
+                            查看详情
+                        </a>
+                        {{if goods.status == '01'}}
+                        <a class="add-cart">
+                            加入购物车
+                        </a>
+                        {{else}}
+                        <a class="sell-none">
+                            已售罄
+                        </a>
+                        {{/if}}
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+            {{/each}}
+        </script>
+
+        <div id="hot-goods">
+        </div>
+
+        <script id="goGroup-template" type="text/html">
+            {{each goGroups item i}}
+            <div class="goGroup">
+                <h1 class="common-title"><i></i>{{item.name}}</h1>
+                <ul class="goods-list">
+                    <li class="first-big">
+                        <a href="">
+                            <img src={{item.photoServerUrl}}>
+                        </a>
+                    </li>
+                    {{each item.goodsList goods j}}
+                    <li>
+                        <img src={{goods.picturePath}}>
+                        <h3>{{goods.goodsName}}</h3>
+                        <p>{{goods.goodsKeyWord}}</p>
+                        <span class="price">&yen;{{goods.price}}</span>
+                        <div class="btns">
+                            <a class="show-detail" href="goodsDetail.html?goodsId={{goods.goodsId}}">
+                                查看详情
+                            </a>
+                            {{if goods.status == '01'}}
+                            <a class="add-cart">
+                                加入购物车
+                            </a>
+                            {{else}}
+                            <a class="sell-none">
+                                已售罄
+                            </a>
+                            {{/if}}
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+        </script>
+
+
+        <!--点击加入购物车后显示的局部界面-->
+        <div class="add-cart-success">
+            <div class="success-info">
+                <div class="lf">
+                    <i class="iconfont icon-duigouzhuanhuan lf"></i>
+                    <div class="lf">
+                        <p>商品成功加入购物车！</p>
+                        <span>九阳白玉盏</span>
+                    </div>
+                </div>
+                <div class="rt">
+                    <a href="">查看商品详情</a>
+                    <a href="">去购物车结算></a>
+                </div>
+            </div>
+            <div class="other-goods">
+                <p>你可能还需要</p>
+                <ul>
+                    <li>
+                        <a href="" class="lf">
+                            <img src="../img/dynamic_img/J6-1.jpg" alt="">
+                        </a>
+                        <div class="rt">
+                            <a class="title" href="">炒菜机器人J6 多功能自动烹饪炒菜机 家用</a>
+                            <span>&yen;1599.00</span>
+                            <a class="add-cart" href=""><i class="iconfont icon-shopping-cart"></i>加入购物车</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="lf">
+                            <img src="../img/dynamic_img/J6-1.jpg" alt="">
+                        </a>
+                        <div class="rt">
+                            <a class="title" href="">炒菜机器人J6 多功能自动烹饪炒菜机 家用</a>
+                            <span>&yen;1599.00</span>
+                            <a class="add-cart" href=""><i class="iconfont icon-shopping-cart"></i>加入购物车</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="lf">
+                            <img src="../img/dynamic_img/J6-1.jpg" alt="">
+                        </a>
+                        <div class="rt">
+                            <a class="title" href="">炒菜机器人J6 多功能自动烹饪炒菜机 家用</a>
+                            <span>&yen;1599.00</span>
+                            <a class="add-cart" href=""><i class="iconfont icon-shopping-cart"></i>加入购物车</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="lf">
+                            <img src="../img/dynamic_img/J6-1.jpg" alt="">
+                        </a>
+                        <div class="rt">
+                            <a class="title" href="">炒菜机器人J6 多功能自动烹饪炒菜机 家用</a>
+                            <span>&yen;1599.00</span>
+                            <a class="add-cart" href=""><i class="iconfont icon-shopping-cart"></i>加入购物车</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="lf">
+                            <img src="../img/dynamic_img/J6-1.jpg" alt="">
+                        </a>
+                        <div class="rt">
+                            <a class="title" href="">炒菜机器人J6 多功能自动烹饪炒菜机 家用</a>
+                            <span>&yen;1599.00</span>
+                            <a class="add-cart" href=""><i class="iconfont icon-shopping-cart"></i>加入购物车</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="lf">
+                            <img src="../img/dynamic_img/J6-1.jpg" alt="">
+                        </a>
+                        <div class="rt">
+                            <a class="title" href="">炒菜机器人J6 多功能自动烹饪炒菜机 家用</a>
+                            <span>&yen;1599.00</span>
+                            <a class="add-cart" href=""><i class="iconfont icon-shopping-cart"></i>加入购物车</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="lf">
+                            <img src="../img/dynamic_img/J6-1.jpg" alt="">
+                        </a>
+                        <div class="rt">
+                            <a class="title" href="">炒菜机器人J6 多功能自动烹饪炒菜机 家用</a>
+                            <span>&yen;1599.00</span>
+                            <a class="add-cart" href=""><i class="iconfont icon-shopping-cart"></i>加入购物车</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="lf">
+                            <img src="../img/dynamic_img/J6-1.jpg" alt="">
+                        </a>
+                        <div class="rt">
+                            <a class="title" href="">炒菜机器人J6 多功能自动烹饪炒菜机 家用</a>
+                            <span>&yen;1599.00</span>
+                            <a class="add-cart" href=""><i class="iconfont icon-shopping-cart"></i>加入购物车</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+    <div class="footer-container">
+
+    </div>
+
+</body>
+</html>

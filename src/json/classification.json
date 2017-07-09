@@ -1,0 +1,29 @@
+{
+  "code":"1",
+  "msg":"",
+  "data":{
+    "categoryS":[
+      {
+        "categoryId":"哈哈哈",
+        "categoryName":"豆浆机"
+      },
+      {
+        "categoryId":"456",
+        "categoryName":"电饭煲"
+      },
+      {
+        "categoryId":"789",
+        "categoryName":"压力煲"
+      },
+      {
+        "categoryId":"789",
+        "categoryName":"压力煲"
+      },
+      {
+        "categoryId":"789",
+        "categoryName":"压力煲"
+      }
+
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+
+#banner{
+    margin-top:10px;
+}
+#banner .carousel{
+    width:1220px;
+    height:610px;
+    overflow:hidden;
+    position:relative;
+}
+#banner .carousel ul.view{
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#banner .carousel ul.view li{
+    float:left;
+    width:1220px;
+}
+/*#banner .carousel ul.view li img{*/
+    /*width:1220px;*/
+/*}*/
+#banner .carousel ul.circle{
+    position:absolute;
+    bottom:30px;
+    height:14px;
+    text-align:center;
+    width:100%;
+    font-size:0;
+}
+#banner .carousel ul.circle li{
+    background:#fff;
+    display:inline-block;
+    width:14px;
+    height:14px;
+    margin:0 11px;
+    border-radius:50%;
+}
+#banner .carousel ul.circle li:hover{
+    cursor:pointer;
+}
+#banner .carousel ul.circle li.active{
+    background:#F26521;
+}
+#banner>.small-banner{
+    overflow:hidden;
+    margin-top:30px;
+}
+#banner>.small-banner li{
+    width:25%;
+    float:left;
+}
+#banner>.small-banner li img{
+    width:100%;
+}
+
+#hot-goods,#soybean-milk-expert,#official-choiceness{
+    width:1217px;
+    margin:0 auto;
+    margin-top:40px;
+}
+.goGroup{
+    width:1217px;
+    margin:0 auto;
+    margin-top:40px;
+}
+
+h1.common-title{
+    font-size:22px;
+    font-weight:normal;
+    overflow:hidden;
+    height:32px;
+}
+h1.common-title i{
+    height:84%;
+    margin-top:3px;
+    float:left;
+    width:6px;
+    background:#F26521;
+    margin-right:12px;
+}
+.goods-list{
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    overflow:hidden;
+    margin-top:20px;
+    width:1221px;
+}
+.goods-list li{
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    width:305px;
+    text-align:center;
+    background:#fff;
+    height:380px;
+    float:left;
+}
+.goods-list li.first-big{
+    width:610px;
+}
+.goods-list li.first-big img{
+    width:100%;
+    height:100%;
+    margin:0;
+}
+.goods-list li>h3{
+    font-size:13px;
+    color:#333;
+    font-weight:normal;
+}
+.goods-list li>p{
+    color:#999;
+    margin-top:12px;
+    margin-bottom:50px;
+    width:240px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.goods-list li>span.price{
+    color:#F26521;
+    font-size:14px;
+}
+.goods-list li>.btns a{
+    color:#666;
+    padding:8px 20px;
+    border:1px solid #ccc;
+    margin-left:12px;
+}
+.goods-list li>img{
+    width:165px;
+    margin-top:30px;
+}
+.goods-list li .btns{
+    display:none;
+}
+.goods-list li:hover span.price{
+    display:none;
+}
+.goods-list li:hover .btns{
+    display:block;
+}
+.goods-list li .btns>a:not(.sell-none):hover{
+    background-color:#FFEEE4;
+    border-color:#F26521;
+}
+.goods-list li .btns>a:not(.sell-none):active{
+    background-color:#F26521;
+    color:#fff;
+}
+.goods-list li .btns a.sell-none{
+    background:#eee;
+}
+.goods-list li .btns a.sell-none:hover{
+    cursor:auto;
+}
+
+
+/*图片固定宽高比*/
+.aspect_ratio {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 50%;
+}
+
+.aspect_ratio img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}

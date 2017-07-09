@@ -1,0 +1,35 @@
+<div class="container-nav">
+    <div class="lf">
+        <a href="/dist/view/index2.html"><img src="../../img/logo.png" alt=""></a>
+        <ul>
+            <script id="category-template" type="text/html">
+                <li><a href="/dist/view/index2.html">精选</a></li>
+                {{each categorys item i}}
+                <li><a href="/dist/view/soybeanMilkMachine.html?categoryId={{item.categoryId}}">{{item.categoryName}}</a></li>
+                {{/each}}
+                <li><a href="/dist/view/soybeanMilkMachine.html?categoryId=1">全部商品</a></li>
+            </script>
+        </ul>
+    </div>
+    <div class="rt">
+        <div class="my-order lf">
+            <a href="/dist/view/myOrder/myOrder.html" id="login_after_myorder_div">
+                我的订单
+                <i class="iconfont icon-jiantou-copy1"></i>
+            </a>
+            <ul>
+                <li><a href="/dist/view/myOrder/myWaitPayOrder.html">待付款</a></li>
+                <li><a href="/dist/view/myOrder/myWaitSendOrder.html">待发货</a></li>
+                <li><a href="/dist/view/myOrder/myWaitSignOrder.html">待签收</a></li>
+                <li><a href="/dist/view/myOrder/myWaitEvaluateOrder.html">待评价</a></li>
+                <li><a href="/dist/view/myOrder/myCompleteOrder.html">已完成</a></li>
+            </ul>
+        </div>
+        <div class="rt">
+            <a href="javascript:void(0)" class="shopping-cart">
+                <i class="iconfont icon-shopping-cart"></i>
+                购物车(<span id="shopping-cart-num" class="shopping-cart-num">0</span>)
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+.gitignore/
+node_modules
+dist
+.DS_Store
+.idea/
+jyo2opc1.iml
